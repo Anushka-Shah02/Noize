@@ -1,0 +1,374 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:10px;
+    font-family:'Montserrat',sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    max-width:1515px;
+}
+.part{
+    height:90vh;
+}
+.navbar{
+    padding: 5px 2px;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    opacity:0.5;
+    z-index: 10;
+    background-color: black;
+    width:1536px;
+    height:95px;
+}
+.nav1{
+    display:flex;
+    flex-direction: row;
+    padding:0 10px;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    max-width:1300px;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+.nav1 a{
+    margin:25px;
+}
+.nav1 svg{
+    top:17px;
+    left:-50px;
+    position:relative;
+}
+.nav1 h1{
+   color:white;
+   font-size: 2.5rem;
+   font-weight: 600;
+   padding:10px 2px;
+   position: relative; 
+   left:-50px;
+   top:17px;
+}
+.nav1 ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+    font-size:20px;
+    font-weight: 600;
+    margin-left:80px;
+}
+.nav1 .icons{
+    position: relative;
+    left:300px;
+    top: 10px;
+}
+.nav1 .icons svg{
+    margin:5px;
+}
+.sec1 img{
+    display:flex;
+    width:1536px;
+    height:85vh;
+    background-size:cover;
+}
+
+.sec1 h1{
+    color:white;
+    font-weight:800;
+    font-size: 50px;
+    position: relative;
+    justify-content: center;
+    top:-400px;
+    left:630px;
+    width:270px;
+    text-align:center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.sec2{
+    position: relative;
+    top:-145px;
+    background-color: black;
+    height:60vh;
+    width:1525px;
+}
+
+.sec2 .black{
+    display: flex;
+    flex-direction: row;
+    padding:100px 20px;
+    padding-bottom: 20px;
+}
+.sec2 .block{
+    display: flex;
+    flex-direction: column;
+    margin-left:60px;
+}
+.sec2 .black .row1{
+    display: flex;
+    flex-direction: row;
+}
+.sec2 .black .row2{
+    display: flex;
+    flex-direction: row;
+}
+.sec2 .row1 .find,
+.sec2 .row1 .call,
+.sec2 .row2 .time,
+.sec2 .row2 .mail{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    margin:20px;
+}
+
+.sec2 .block .head{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.sec2 .block h2{
+    margin-bottom:17px;
+    font-size:2rem;
+    width:180px;
+}
+.sec2 .block p{
+    font-weight: 400;
+    color:grey;
+    font-size: 1.2rem;
+}
+
+.sec2 .row2 .mail{
+    margin-left:80px;
+}
+
+.sec2 .message{
+    padding-top:10px;
+    margin-left:240px;
+}
+
+.sec2 .message input{
+    padding:15px;
+}
+
+.sec2 .message .ms1 .name{
+    margin-right:7px;
+}
+
+.sec2 .message .msg{
+    width:401px;
+    padding-bottom:80px;
+    margin-top:8px;
+}
+.sec2 .message .btn{
+    margin-top:8px;
+    padding:10px;
+    text-align:center;
+    color:white;
+    font-weight: 600;
+    background-color: black;
+    border:2px solid red;
+    width:401px;
+    cursor: pointer;
+}
+.sec2 .block svg{
+    height:60px;
+    width:60px;
+}
+.sec3 .map{
+    position: relative;
+    top:-145px;
+    width:1520px;
+}
+
+.sec4 {
+    background-color: black;
+    position: relative;
+    top:-145px;
+    height:70vh;
+    width:1520px;
+}
+
+.sec4 .black2{
+    text-align:center;
+    color:white;
+}
+
+.sec4 .black2 .noise{
+    padding-top:15px;
+    width:150px;
+    height:150px;
+}
+
+.sec4 .black2 h1{
+    font-size:2.5rem;
+    font-weight:600;
+    line-height:20px;
+    margin-top:5px;
+    margin-bottom: 20px;
+}
+
+.sec4 .black2 p{
+    color:grey;
+    font-size:1.5rem;
+    margin:10px;
+}
+
+.sec4 .black2 .icons2{
+    padding-top:40px;
+}
+
+.sec4 .black2 .icons2 svg{
+    margin:4px;
+}
+
+.sec4 .black2 h2{
+    color:red;
+    margin-top:100px;
+}
+
+@media only screen and (max-width: 500px){
+    html,body{
+        margin:0px;
+        padding:0px;
+        overflow-x: hidden;
+    }
+    
+    .nav1 svg{
+      display:flex;
+      float:left;
+      position: relative;
+      top:17px;
+      left:-510px;
+      }    
+      .nav1 h1{
+        color:white;
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding:10px 2px;
+        position: relative; 
+        left:-510px;
+        top:17px;
+     }
+      .navbar .nav1 ul{
+        display:none;
+      }    
+      .nav1 .icons svg{
+        margin:3px;
+    }
+      .nav1 .icons{
+        position: relative;
+        left:120px;
+        top: 10px;
+    }
+      .sec1 img{
+        width:500px;
+      }
+
+      .sec1 h1{
+        position: relative;
+        justify-content: center;
+        top:-360px;
+        left:80px;
+        width:270px;
+        text-align:center;
+      }    
+      .sec2{
+          height:800px;
+      }
+
+      .sec2 .block{
+          display:flex;
+          flex-direction: column;
+          margin-left:30px;
+      }
+      .sec2 .black{
+        display:flex;
+        flex-direction: column;
+        padding:60px 10px;
+        padding-bottom: 10px;
+      }
+      
+.sec2 .black .row1{
+    display: flex;
+    flex-direction: column;
+}
+.sec2 .black .row2{
+    display: flex;
+    flex-direction: column;
+}
+.sec2 .row2 .mail{
+    margin-left:20px;
+}
+.sec2 .message{
+    padding-top:15px;
+    margin-left:10px;
+    width:300px;
+}
+.sec2 .message .btn{
+    margin-top:8px;
+    padding:10px;
+    text-align:center;
+    color:white;
+    font-weight: 600;
+    background-color: black;
+    border:2px solid red;
+    width:350px;
+    cursor: pointer;
+}
+
+.sec2 .message input{
+    padding:10px;
+}
+
+.sec2 .message .ms1 .name,
+.sec2 .message .ms1 .email{
+    /* margin-right:5px; */
+    width:172px;
+}
+
+.sec2 .message .msg{
+    width:350px;
+    padding-bottom:80px;
+    margin-top:6px;
+}
+.sec2 .message .ms1{
+    display:flex;
+    flex-direction: row;
+}
+.sec3 .map{
+    width:500px;
+}
+
+.sec4 {
+    /* height:700px; */
+    width:500px;
+}
+
+.sec4 .black2{
+    text-align:center;
+    color:white;
+    position: relative;
+    right:50px;
+}
+
+.part{
+    height:90vh;
+}
+    }
